@@ -12,11 +12,18 @@ Esta API foi desenvolvida como parte da matéria de Desenvolvimento Web no Centr
 - SQLite
 
 ## Endpoints
-- `GET /dados` - Lista todos os usuários e seus dados;
-
-- `GET /dados/{id}` - Apresenta os dados específicos do id solicitado;
-- `POST /dados` - Cria um novo usuário com novos dados;
-- `DELETE /dados/{id}` - Apaga um usuário e seus dados.
+### Dados
+- `POST /dados` - Adiciona um novo dado. Envie um JSON com os campos 'nome', 'idade' e 'id_cidade'.
+- `GET /dados` - Retorna todos os dados da tabela.
+- `GET /dados/{id}` - Retorna um dado específico da tabela.
+- `DELETE /dados/{id}` - Deleta um dado específico da tabela.
+- `PUT /dados/{id}` - Atualiza um dado específico da tabela. Envie um JSON com os campos 'nome', 'idade' e 'id_cidade'.
+### Cidades
+- `POST /cidades` - Adiciona um novo dado. Envie um JSON com os campos 'cidade_nome' e 'uf'.
+- `GET /cidades` - Retorna todos os dados da tabela.
+- `GET /cidades/{id}` - Retorna um dado específico da tabela.
+- `PUT /cidades/{id}` - Atualiza um dado específico da tabela. Envie um JSON com os campos 'cidade_nome' e 'uf'.
+- `DELETE /cidades/{id}` - Deleta um dado específico da tabela.
 <br>
 <div align="center">
 <h3 align="center">Autor</h3>
