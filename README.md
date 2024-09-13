@@ -1,10 +1,10 @@
 # API de Desenvolvimento Web
 
-## Status do Projeto
-![Status](https://img.shields.io/badge/status-em%20progresso-yellow)
+## Situação do Projeto
+![Status](https://img.shields.io/badge/Status-Finalizado-red)
 
 ## Descrição
-Esta API foi desenvolvida como parte da matéria de Desenvolvimento Web no Centro Universitário Católica de Santa Catarina. O objetivo é fornecer uma interface para gerenciar dados de uma aplicação web.
+Esta simples API foi desenvolvida como parte da matéria de Desenvolvimento Web no Centro Universitário Católica de Santa Catarina. O objetivo é fornecer opções de /GET,/POST,/PUT,/DELETE para visualizar e gerenciar dados de pessoas e cidades em formato JSON.
 
 ## Tecnologias Utilizadas
 - Python
@@ -16,8 +16,8 @@ Esta API foi desenvolvida como parte da matéria de Desenvolvimento Web no Centr
 - `POST /dados` - Adiciona um novo dado. Envie um JSON com os campos 'nome', 'idade' e 'id_cidade'.
 - `GET /dados` - Retorna todos os dados da tabela.
 - `GET /dados/{id}` - Retorna um dado específico da tabela.
-- `DELETE /dados/{id}` - Deleta um dado específico da tabela.
 - `PUT /dados/{id}` - Atualiza um dado específico da tabela. Envie um JSON com os campos 'nome', 'idade' e 'id_cidade'.
+- `DELETE /dados/{id}` - Deleta um dado específico da tabela.
 ### Cidades
 - `POST /cidades` - Adiciona um novo dado. Envie um JSON com os campos 'cidade_nome' e 'uf'.
 - `GET /cidades` - Retorna todos os dados da tabela.
